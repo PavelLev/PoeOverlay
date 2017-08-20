@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoeOverlay", "PoeOverlay\PoeOverlay.csproj", "{26648B63-0587-4C41-BBAB-F299FCE0FEBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26648B63-0587-4C41-BBAB-F299FCE0FEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26648B63-0587-4C41-BBAB-F299FCE0FEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26648B63-0587-4C41-BBAB-F299FCE0FEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26648B63-0587-4C41-BBAB-F299FCE0FEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F322C1CD-24FF-495B-821A-971EA6F10B98}
+	EndGlobalSection
+EndGlobal
