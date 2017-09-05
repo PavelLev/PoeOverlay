@@ -19,7 +19,7 @@ namespace PoeOverlay.UnitTests.ModelLogic
             
             itemWhisperHanler.Handle(itemSearch, item);
 
-            Assert.Throws<InvalidOperationException>(() => itemWhisperHanler.ItemsToWhisper.Last());
+            Assert.AreEqual(0, itemWhisperHanler.ItemsToWhisper.Count);
         }
         [Test]
         public void Handle_AutowhisperIsFalseAndBuyoutIsNotEmpty_DoingNothing()
@@ -28,7 +28,7 @@ namespace PoeOverlay.UnitTests.ModelLogic
 
             itemWhisperHanler.Handle(itemSearch, item);
 
-            Assert.Throws<InvalidOperationException>(() => itemWhisperHanler.ItemsToWhisper.Last());
+            Assert.AreEqual(0, itemWhisperHanler.ItemsToWhisper.Count);
         }
         [Test]
         public void Handle_AutowhisperIsTrueAndBuyoutIsEmpty_DoingNothing()
@@ -37,14 +37,14 @@ namespace PoeOverlay.UnitTests.ModelLogic
 
             itemWhisperHanler.Handle(itemSearch, item);
 
-            Assert.Throws<InvalidOperationException>(() => itemWhisperHanler.ItemsToWhisper.Last());
+            Assert.AreEqual(0, itemWhisperHanler.ItemsToWhisper.Count);
         }
 
 
         [Test]
         public void Handle_AutowhisperIsTrueAndBuyoutIsNotEmpty_AddingItemToItemsToWhisper()
         {
-            var (itemWhisperHanler, itemSearch, item) = HandleSetUp(true, true);
+            var (itemWhisperHanler, itemSearch, item) = HandleSetUp(true, false);
 
             itemWhisperHanler.Handle(itemSearch, item);
 
